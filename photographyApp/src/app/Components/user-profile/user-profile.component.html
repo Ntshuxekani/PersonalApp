@@ -1,0 +1,14 @@
+<div *ngIf="user">
+    <h2>Your Profile</h2>
+    <p>Email: {{ user.email }}</p>
+    <h3>Your Bookings</h3>
+    <ul>
+      <li *ngFor="let booking of bookings">
+        {{ booking.date }} - {{ booking.serviceType }} - {{ booking.status }}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!user">
+    <p>Please sign in to view your profile.</p>
+  </div>
+  

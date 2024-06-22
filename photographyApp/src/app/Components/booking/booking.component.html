@@ -1,0 +1,18 @@
+<div *ngIf="user">
+    <h2>Book a Session</h2>
+    <form (ngSubmit)="book()">
+      <label for="date">Date:</label>
+      <input type="date" id="date" [(ngModel)]="date" name="date" required>
+      <label for="serviceType">Service Type:</label>
+      <select id="serviceType" [(ngModel)]="serviceType" name="serviceType" required>
+        <option value="corporate">Corporate Event</option>
+        <option value="family">Family Function</option>
+        <option value="restoration">Photo/Video Restoration</option>
+      </select>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+  <div *ngIf="!user">
+    <p>Please sign in to book a session.</p>
+  </div>
+  
