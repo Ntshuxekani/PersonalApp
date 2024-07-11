@@ -9,6 +9,8 @@ import { RegisterComponent } from './Components/register/register.component';
 import { RecipeListComponent } from './Components/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './Components/recipe-detail/recipe-detail.component';
 import { RecipeFormComponent } from './Components/recipe-form/recipe-form.component';
+import { RecipeService } from './services/recipe.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { RecipeFormComponent } from './Components/recipe-form/recipe-form.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
