@@ -11,6 +11,7 @@ import { RecipeDetailComponent } from './Components/recipe-detail/recipe-detail.
 import { RecipeFormComponent } from './Components/recipe-form/recipe-form.component';
 import { RecipeService } from './services/recipe.service';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './Components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    RecipeFormComponent
+    RecipeFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

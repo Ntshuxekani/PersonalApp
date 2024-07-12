@@ -1,0 +1,16 @@
+/* src/app/app.component.css */
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fullscreen-background {
+    background-image: url('/assets/bg.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%;
+  }
+  
